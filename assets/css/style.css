@@ -822,4 +822,42 @@ body {
   .stackCard {
     min-height: auto;
   }
+  .services--section, .aboutus--section {
+    padding-top: 56px;
+}
+}
+@media(max-width:767px){
+  .end--points {
+    padding: 25px 15px;
+    padding-bottom: 0px;
+}
+
+.services--section__container {
+    padding-bottom: 0px;
+}
+  .services--section>.services--section__heading-banner h1 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+            margin-top: 80px;
+}
+.leadership--lists>.leadership--list {
+    flex-direction: column;
+    padding: 15px;
+}
+
+.leadership--list__content>img {
+    width: 50px;
+    margin-left: 0px;
+}
+
+.leadership--list__content>p {
+    flex-direction: column;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.leadership__container {
+    padding-top: 0px;
+}
 }
