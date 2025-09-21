@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good Luck</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -23,18 +23,22 @@
 
   <body>
     <div class="main--div">
-
       <div class="sticky--btn">
-            <a href="./assets/images/pdf/GIL_AR_23-24_0509.pdf" target="_blank" class="transition-[0.5s] bg-black text-white border border-[#000] rounded-[50px] px-4 py-2 flex items-center justify-center lg:mt-5 mt-2 w-fit">Download Annual Report</a>
-        </div>
+        <a
+          href="./assets/images/pdf/GIL_AR_23-24_0509.pdf"
+          target="_blank"
+          class="transition-[0.5s] bg-black text-white border border-[#000] rounded-[50px] px-4 py-2 flex items-center justify-center lg:mt-5 mt-2 w-fit"
+          >Download Annual Report</a
+        >
+      </div>
 
       <!-- Header -->
       <header class="bg-white shadow-sm fixed w-full top-0 z-[999]">
         <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center py-4">
-            <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
               <img src="./assets/img/logo.png" class="w-full logo" />
-            </div>
+            </a>
             <nav class="main--nav items-center">
               <a
                 href="index.html"
@@ -89,10 +93,16 @@
                   </svg>
                 </button>
                 <div class="drop--down">
-                  <a href="#">Engineering Structure & Precision Fabrication</a>
-                  <a href="#">Forgings</a>
-                  <a href="#">Precision Pipes & Auto Tubes</a>
-                  <a href="#">Cold Formed Profile, CR Coils Pipes & Tubes</a>
+                  <a href="engineering-structure-precision-fabrication.html"
+                    >Engineering Structure & Precision Fabrication</a
+                  >
+                  <a href="forgings.html">Forgings</a>
+                  <a href="precision-pipes-auto-tubes.html"
+                    >Precision Pipes & Auto Tubes</a
+                  >
+                  <a href="cold-formed-profile-cr-coils-pipes-tubes.html"
+                    >Cold Formed Profile, CR Coils Pipes & Tubes</a
+                  >
                 </div>
               </div>
 
@@ -745,7 +755,11 @@
               infrastructures, offering engineering, fabricating, and erecting
               steel and composite structures for marquee projects nationwide.
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a
+              href="engineering-structure-precision-fabrication.html"
+              class="btn"
+              >Read More</a
+            >
           </div>
 
           <div class="slider-thumbs">
@@ -754,6 +768,7 @@
               data-bg="./assets/img/slide-1.png"
               data-title="Engineering Structure & Precision Fabrication"
               data-desc="The Company delivers end-to-end solutions in complex infrastructures, offering engineering, fabricating, and erecting steel and composite structures for marquee projects nationwide."
+              data-link="engineering-structure-precision-fabrication.html"
             >
               <img src="./assets/img/slide-1.png" alt="" />
               <span>Engineering Structure & Precision Fabrication</span>
@@ -763,6 +778,7 @@
               data-bg="./assets/img/slide-2.png"
               data-title="Forgings"
               data-desc="Goodluck India Limited’s Forgings Division is a strategic pillar of its value-added product portfolio, delivering mission-critical, precision-engineered components to some of the most demanding sectors worldwide — from defense and aerospace to oil & gas, nuclear, and heavy engineering."
+              data-link="forgings.html"
             >
               <img src="./assets/img/slide-2.png" alt="" />
               <span>Forgings</span>
@@ -772,6 +788,7 @@
               data-bg="./assets/img/slide-3.png"
               data-title="Precision Pipes & Auto Tubes"
               data-desc="The Precision Pipes & Auto Tubes segment forms a vital part of Goodluck India’s diversified portfolio, serving as a key supplier to global automobile majors and engineering industries. With advanced manufacturing facilities for ERW (Electric Resistance Welded) and CDW (Cold Drawn Welded) tubes, the Company delivers high-quality, dimensionally accurate products that meet stringent international standards."
+              data-link="precision-pipes-auto-tubes.html"
             >
               <img src="./assets/img/slide-3.png" alt="" />
               <span>Precision Pipes & Auto Tubes</span>
@@ -781,6 +798,7 @@
               data-bg="./assets/img/slide-3.png"
               data-title="Cold Formed Profile, CR Coils Pipes & Tubes"
               data-desc="The Cold Formed Profile, CR Coils, Pipes & Tubes segment is one of the largest contributors to Goodluck India’s business portfolio, roviding a wide range of products that cater to infrastructure, engineering, and government-led projects. With advanced rolling and forming facilities, the Company produces high-quality cold rolled sheets, pipes, and hollow sections that are valued for their durability, tensile strength, and efficiency"
+              data-link="cold-formed-profile-cr-coils-pipes-tubes.html"
             >
               <img src="./assets/img/slide-3.png" alt="" />
               <span>Cold Formed Profile, CR Coils Pipes & Tubes</span>
@@ -1351,9 +1369,9 @@
         </div>
       </footer>
 
-      <button id="scrollTopBtn" title="Go to top" style="display: flex;">↑</button> 
-
-
+      <button id="scrollTopBtn" title="Go to top" style="display: flex">
+        ↑
+      </button>
     </div>
     <!-- main div -->
     <script src="./assets/js/custom.js"></script>
@@ -1372,10 +1390,12 @@
           var bg = $(this).attr("data-bg");
           var title = $(this).attr("data-title");
           var desc = $(this).attr("data-desc");
+          var link = $(this).attr("data-link");
 
           $(".slider").css("background-image", "url(" + bg + ")");
           $(".slider-content h2").html(title);
           $(".slider-content p").html(desc);
+          $(".slider-content a").attr('href', link);
         });
 
         $(".toggle--nav").click(function () {
