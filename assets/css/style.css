@@ -831,6 +831,9 @@ body {
     padding: 25px 15px;
     padding-bottom: 0px;
 }
+.service--box {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 .services--section__container {
     padding-bottom: 0px;
