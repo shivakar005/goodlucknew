@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Luck</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main--div">
+      <div class="sticky--btn">
+        <a
+          href="./assets/images/pdf/GIL_AR_23-24_0509.pdf"
+          target="_blank"
+          class="transition-[0.5s] bg-black text-white border border-[#000] rounded-[50px] px-4 py-2 flex items-center justify-center lg:mt-5 mt-2 w-fit"
+          >Download Annual Report</a
+        >
+      </div>
+
+      <!-- Header -->
+      <header class="bg-white shadow-sm fixed w-full top-0 z-[999]">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+              <img src="./assets/img/logo.png" class="w-full logo" />
+            </div>
+            <nav class="main--nav items-center">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-blue-600 transition-colors"
+                >Home</a
+              >
+              <!-- Dropdown -->
+              <div class="relative drop--down--nav">
+                <button
+                  class="text-gray-700 hover:text-blue-600 transition-colors flex items-center"
+                >
+                  Company
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="drop--down">
+                  <a href="#">About GIL</a>
+                  <a href="leadership-team.html">Leadership Team</a>
+                  <a href="#">Message from the Chairman</a>
+                </div>
+              </div>
+
+              <!-- Dropdown -->
+              <div class="relative drop--down--nav">
+                <button
+                  class="text-gray-700 hover:text-blue-600 transition-colors flex items-center"
+                >
+                  Services
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="drop--down">
+                  <a href="#">Engineering Structure & Precision Fabrication</a>
+                  <a href="#">Forgings</a>
+                  <a href="#">Precision Pipes & Auto Tubes</a>
+                  <a href="#">Cold Formed Profile, CR Coils Pipes & Tubes</a>
+                </div>
+              </div>
+
+              <!-- Dropdown -->
+              <div class="relative drop--down--nav">
+                <button
+                  class="text-gray-700 hover:text-blue-600 transition-colors flex items-center"
+                >
+                  Statutory Reports
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="drop--down">
+                  <a href="#">Directors Report</a>
+                  <a href="#">Corporate Governance</a>
+                  <a href="#">BRSR</a>
+                  <a href="#">MDA</a>
+                </div>
+              </div>
+
+              <!-- Dropdown -->
+              <div class="relative drop--down--nav">
+                <button
+                  class="text-gray-700 hover:text-blue-600 transition-colors flex items-center"
+                >
+                  Financial Statements
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="drop--down">
+                  <a href="#">Standalone Financial</a>
+                  <a href="#">Consolidated Financial</a>
+                </div>
+              </div>
+
+              <a
+                href="contact-us.html"
+                class="bg-[#fcb424] !px-5 !py-2 rounded-full flex items-center justify-center contact--btn"
+                >Contact</a
+              >
+            </nav>
+            <button class="toggle--nav">
+              <svg
+                class="w-6 h-6 menu--open"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                class="w-7 h-7 menu--close"
+                width="40"
+                height="40"
+                viewbox="0 0 40 40"
+              >
+                <path
+                  d="M 10,10 L 30,30 M 30,10 L 10,30"
+                  stroke="black"
+                  stroke-width="4"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- content inner -->
+      <div class="services--section">
+        <div class="services--section__heading-banner">
+          <h1
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-delay="50"
+            class="aos-init aos-animate"
+          >
+            Senior Managment Team
+          </h1>
+        </div>
+
+        <div class="leadership__container">
+          <div class="leadership--lists">
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Mahesh Chandra Garg</h3>
+                <p class="mb-3 text-lg text-black">Chairperson</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Garg, an alumnus of the prestigious Indian Institute of Technology, graduated in 1967 and brings over five decades of rich professional experience. A visionary leader, he is distinguished for his exceptional management skills honed over years of dedicated service. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Ramesh Chandra Garg</h3>
+                <p class="mb-3 text-lg text-black">Whole Time Director</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. R.C. Garg, an engineering graduate in Mining from the prestigious ISM–Dhanbad, brings over five decades of extensive experience in the coal industry. He is widely recognized as a strong motivator and an exceptional team leader. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Nitin Garg</h3>
+                <p class="mb-3 text-lg text-black">Whole Time Director</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Garg, a qualified engineer and MBA graduate from the Narsee Monjee Institute of Management, oversees the Company’s production operations. He has previously been associated with reputed organizations such as Yamaha Motors and Honda Motors. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Shambhu Nath Singh</h3>
+                <p class="mb-3 text-lg text-black">Executive Director</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Shri Shambhu Nath Singh, aged 60, holds a Bachelor’s degree in science with a specialization in Mathematics. With over 27 years of rich experience in the steel industry, he possesses expertise in operations management and product development. He has been an integral part of the Company since December 1995. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Manish Garg</h3>
+                <p class="mb-3 text-lg text-black">Chief Operating Officer</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Manish Garg, an alumnus of the Indian Institute of Technology, is a qualified engineer with 33 years of experience in managing and overseeing end-to-end export business operations. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Sanjay Bansal</h3>
+                <p class="mb-3 text-lg text-black">Chief Financial Officer</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Bansal, a qualified Chartered Accountant, possesses over 32 years of extensive experience in corporate finance, covering business planning, budgeting, forecasting, taxation, and high-level negotiations. His career includes leadership roles with prominent organizations such as the JP Group, DS Group, and the Dr. Rajaram Jaipuria Group. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Ram Agarwal</h3>
+                <p class="mb-3 text-lg text-black">Chief Executive Officer</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Agarwal, a qualified engineer who earned his degree in 1990, brings 35 years of extensive experience in the steel industry. His expertise spans the management of Cold Rolled (CR) and structural projects, along with significant proficiency in sales and marketing functions. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Shyam Agarwal</h3>
+                <p class="mb-3 text-lg text-black">Chief Operating Officer</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Shyam Agarwal, a 54-year-old qualified engineer, possesses over 31 years of rich experience in the steel sector, with specialized expertise in the forging industry. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+            <div
+              class="leadership--list"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="50"
+            >
+              <div class="leadership--list__image">
+                <img src="./assets/img/leadership/l-1.png" alt="image" />
+                <div class="name--leadership">
+                  <h3>Mr. Abhishek Agarwal</h3>
+                <p class="mb-3 text-lg text-black">Company Secretary</p>
+                </div>
+              </div>
+              <div class="leadership--list__content">
+                <img src="./assets/img/cot-1.png" />
+                <p class="text-lg text-black">
+                  Mr. Abhishek Agarwal, a qualified Company Secretary, brings over 17 years of expertise in corporate governance, secretarial functions and advisory support to senior management and boards of directors. In his current role, he oversees strategic planning, capital infusion initiatives, legal affairs, statutory compliances, and investor relations, contributing to the organization’s governance and long-term growth objectives. <img src="./assets/img/cot-2.png" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content inner end -->
+
+      <footer class="bg-[#255FA0] py-10">
+        <div class="max-w-[95%] mx-auto w-full">
+          <div class="py-8 px-5 md:px-10 bg-white rounded-2xl mb-3">
+            <div class="flex lg:flex-row flex-col lg:gap-0 gap-5">
+              <div
+                class="w-full lg:w-[20%] flex flex-col justify-between gap-5"
+              >
+                <a href="/" data-discover="true"
+                  ><img
+                    class="w-full max-w-[200px]"
+                    alt=""
+                    src="./assets/img/logo.png"
+                /></a>
+              </div>
+              <div class="w-full lg:w-[60%]">
+                <h3
+                  class="text-black text-lg md:text-4xl font-medium lg:mb-5 mb-2"
+                >
+                  Download Centre
+                </h3>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-1 gap-y-5 bg-[#255FA0] p-[20px] rounded-lg"
+                >
+                  <li class="">
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Annual-Report-2024-25.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Annual Report</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Management-Discussion-&amp;-Analysis.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Management Discussion &amp; Analysis</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Boards-Report.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Boards Report</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Corporate-Governance-Report.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      />
+                      <span>Corporate Governance Report</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Business-Responsibility-&amp;-Sustainability-Report.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      />
+                      <span
+                        >Business Responsibility &amp; Sustainability
+                        Report</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Standalone-Financial-Statements.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Standalone Financials Statements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/Consolidated-Financial-Statements.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Consolidated Financial Statements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white flex items-center gap-2 w-fit hover:underline"
+                      href="/pdf/home/AGM-Notice.pdf"
+                      target="_blank"
+                      data-discover="true"
+                    >
+                      <img
+                        class="w-3 invert-[0]"
+                        alt=""
+                        src="./assets/img/download.svg"
+                      /><span>Notice</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-[20%] lg:text-right">
+                <div class="mb-3">
+                  <p>For any queries contact us at,</p>
+                  <a
+                    class="border rounded-full px-5 py-3 block w-fit lg:ml-auto mt-2"
+                    href="mailto:corporate@goodluck.com"
+                    >corporate@goodluck.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex lg:flex-row flex-col lg:gap-0 gap-2 justify-between">
+            <div>
+              <p class="text-[0.625rem] text-white">
+                © Copyright 2025. All rights reserved. Crafted by
+                <a
+                  class="text-white underline"
+                  href="http://www.thegrapheme.in"
+                  target="_blank"
+                  >The Grapheme</a
+                >
+              </p>
+            </div>
+            <div class="text-white">
+              <a
+                class="text-[0.625rem] text-white"
+                href="/"
+                data-discover="true"
+                >Privacy</a
+              >
+              |
+              <a
+                class="text-[0.625rem] text-white"
+                href="/"
+                data-discover="true"
+                >Terms of Use</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <button id="scrollTopBtn" title="Go to top" style="display: flex">
+        ↑
+      </button>
+    </div>
+    <!-- main div -->
+    <script src="./assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".thumb").click(function () {
+          var bg = $(this).attr("data-bg");
+          var title = $(this).attr("data-title");
+          var desc = $(this).attr("data-desc");
+
+          $(".slider").css("background-image", "url(" + bg + ")");
+          $(".slider-content h2").html(title);
+          $(".slider-content p").html(desc);
+        });
+
+        $(".toggle--nav").click(function () {
+          $(this).toggleClass("active");
+          $(".main--nav").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script>
+      $(function () {
+        let cards = gsap.utils.toArray(".stackCard");
+
+        let stickDistance = 0;
+
+        let firstCardST = ScrollTrigger.create({
+          trigger: cards[0],
+          start: "center center",
+        });
+
+        let lastCardST = ScrollTrigger.create({
+          trigger: cards[cards.length - 1],
+          start: "center center",
+        });
+
+        cards.forEach((card, index) => {
+          var scale = 1 - (cards.length - index) * 0.025;
+          let scaleDown = gsap.to(card, {
+            scale: scale,
+            "transform-origin":
+              '"50% ' + (lastCardST.start + stickDistance) + '"',
+          });
+
+          ScrollTrigger.create({
+            trigger: card,
+            start: "center center",
+            end: () => lastCardST.start + stickDistance,
+            pin: true,
+            markers: false,
+            pinSpacing: false,
+            ease: "none",
+            animation: scaleDown,
+            toggleActions: "restart none none reverse",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
