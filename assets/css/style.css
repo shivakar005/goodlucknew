@@ -20,6 +20,9 @@ body {
 .seconday-text {
   color: var(--secondary-color);
 }
+.primary--gradient{
+  background: linear-gradient(45deg, #164da0, #fcb424);
+}
 .option-text{
   color: #07ac51;
 }
@@ -113,6 +116,22 @@ body {
 }
 
 /* custom end */
+
+.chairman-img {
+    position: relative;
+}
+
+.chairman-img:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fcb424;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    top: 23px;
+    left: 25px;
+}
 
 .main--banner {
   background: linear-gradient(180deg, #fcb017 0%, rgba(252, 176, 23, 0) 60.17%);
@@ -462,6 +481,16 @@ body {
     background-position-y: 108%;
     background-attachment: fixed;
     background-position-x: 88%;
+}
+.about--page{
+
+    background: linear-gradient(180deg, #fcb017 0%, rgba(252, 176, 23, 0) 60.17%);
+}
+.about--page--container{
+      max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 20px;
 }
 .leadership__container {
   max-width: 1400px;

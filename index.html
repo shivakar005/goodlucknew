@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
@@ -66,7 +70,7 @@
                   </svg>
                 </button>
                 <div class="drop--down">
-                  <a href="">About GIL</a>
+                  <a href="about-gil.html">About GIL</a>
                   <a href="leadership-team.html">Leadership Team</a>
                   <a href="about-us.html">Message from the Chairman</a>
                 </div>
@@ -199,28 +203,9 @@
 
       <!-- Banner -->
       <section class="main--banner pt-10 mt-10">
-        <div class="custom--container">
-          <div class="flex lg:flex-row flex-col gap-5 items-center">
-            <div class="lg:w-[40%] w-full lg:text-left text-center">
-              <h1
-                class="h1--heading heading primary-text lg:mb-0 mb-3"
-                data-aos="fade-up"
-                data-aos-easing="ease"
-                data-aos-delay="50"
-              >
-                Adapt to Acclerate
-              </h1>
-              <a
-                href="#"
-                class="custom--btn lg:m-0 mx-auto"
-                data-aos="fade-up"
-                data-aos-easing="ease"
-                data-aos-delay="100"
-              >
-                Download PDF
-              </a>
-            </div>
-            <div class="lg:w-[60%] w-full lg:pl-[150px] pt-5">
+        <div class="custom--containers">
+          <div class="flex lg:flex-row flex-col-reverse gap-5 items-center rounded-b-[40px] overflow-hidden shadow-lg">
+            <div class="lg:w-[60%] w-full pt-5">
               <img
                 src="./assets/img/banner.png"
                 class="w-full"
@@ -229,31 +214,60 @@
                 data-aos-delay="100"
               />
             </div>
+            <div class="lg:w-[60%] w-full lg:text-right text-center lg:pr-[clamp(100px,10vw,150px)] lg:ml-[-250px] px-[20px]" data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-delay="50">
+              <h1
+                class="h1--heading heading primary-text lg:mb-0 mb-3"
+                
+              >
+                Adapt to Acclerate
+              </h1>
+              <p
+                class="primary-text lg:text-right"
+              >
+                In the era of rapid transformation, success belongs to those who
+                can adapt with speed, embrace innovation, and accelerate with a
+                clear sense of direction. Goodluck India Limited embodies this
+                approach, aligning its strengths with emerging opportunities to
+                drive sustainable growth.
+              </p>
+              <a
+                href="#"
+                class="custom--btn lg:!ml-auto lg:mr-0 mt-5 mx-auto"
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section
-        class="tv--section lg:pt-[200px] lg:pb-[75px] py-[50px]"
+        class="tv--section lg:pt-[200px] lg:pb-[0px] py-[50px] mb-[-80px] z-[2] relative"
         data-aos="fade-up"
         data-aos-easing="ease"
         data-aos-delay="100"
       >
         <div class="lg:w-full w-[95%] max-w-5xl mx-auto">
           <div
-            class="w-full bg-[#2c2e2f] rounded-xl overflow-hidden lg:mt-[-100px] lg:p-0 shadow-[7px_9px_61px_0px_#D2D2D2] relative"
+            class="w-full bg-[#2c2e2f] rounded-xl border-[20px] overflow-hidden lg:mt-[-100px] lg:p-0 shadow-[7px_9px_61px_0px_#D2D2D2] relative"
           >
             <video
-              class="w-full aspect-[16/9] object-cover"
-              poster="./assets/img/poster.png"
-            >
-              <source src="/videos/tci-narrative-05.mp4" type="video/mp4" />
-              Your browser does not support the video tag.</video
-            ><button
-              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full text-xl hover:bg-opacity-70 transition opacity-[1]"
-            >
-              <img src="./assets/img/Video.svg" />
-            </button>
+    id="myVideo"
+    class="w-full aspect-[16/9] object-cover"
+    poster="./assets/img/poster.png"
+  >
+    <source src="./assets/img/main-goodluck.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <button
+    id="playPauseBtn"
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full text-xl hover:bg-opacity-70 transition"
+  >
+    <img id="playPauseIcon" src="./assets/img/Video.svg" />
+  </button>
           </div>
         </div>
       </section>
@@ -267,13 +281,17 @@
           <div class="grid lg:grid-cols-2 gap-5 max-w-7xl mx-auto">
             <div>
               <div class="heading--center">
+                <h3  class="h3--heading mb-2 heading text-black"
+                  data-aos="fade-up"
+                  data-aos-easing="ease"
+                  data-aos-delay="50">Defining</h3>
                 <h2
                   class="h2--heading mb-8 heading primary-text"
                   data-aos="fade-up"
                   data-aos-easing="ease"
                   data-aos-delay="50"
                 >
-                  Defining Goodluck India Limited
+                 Goodluck India Limited
                 </h2>
                 <p
                   data-aos="fade-up"
@@ -309,7 +327,7 @@
                     data-aos-easing="ease"
                     data-aos-delay="50"
                   >
-                    <p>
+                    <p class="font-[600]">
                       Engineering Structures & Precision Fabrication –
                       delivering innovative solutions for bridges, high-speed
                       rail, smart cities, solar parks, and architectural
@@ -322,7 +340,7 @@
                     data-aos-easing="ease"
                     data-aos-delay="50"
                   >
-                    <p>
+                    <p class="font-[600]">
                       Forgings – producing mission-critical components for
                       defense, aerospace, oil & gas, nuclear, and heavy
                       engineering industries.
@@ -334,7 +352,7 @@
                     data-aos-easing="ease"
                     data-aos-delay="50"
                   >
-                    <p>
+                    <p class="font-[600]">
                       Precision Pipes & Auto Tubes – manufacturing ERW and CDW
                       tubes for leading global automotive and engineering OEMs.
                     </p>
@@ -345,7 +363,7 @@
                     data-aos-easing="ease"
                     data-aos-delay="50"
                   >
-                    <p>
+                    <p class="font-[600]">
                       Cold Formed Profile, CR Coils, Pipes & Tubes – supplying
                       high-strength cold rolled products, hollow sections, GI
                       pipes, and corrugated sheets for OEMs and infrastructure
@@ -849,7 +867,7 @@
         <div class="custom--container">
           <div class="lg:flex gap-10 items-center">
             <div
-              class="chairman-img bg-white rounded-xl p-10 pb-0 max-w-md w-full"
+              class="chairman-img bg-white rounded-xl p-10 pb-0 max-w-md w-full shadow-lg"
             >
               <img src="./assets/img/chairman.png" />
             </div>
@@ -1007,10 +1025,10 @@
         </div>
       </section>
 
-      <section class="work--section lg:py-[100px] py-[50px] pt-0">
+      <section class="work--section py-[50px] pt-0 pb-0">
         <div class="custom--container">
           <div>
-            <div class="heading--center text-center lg:mb-10 pb-10">
+            <div class="heading--center text-center lg:mb-10 pb-0">
               <h2
                 class="h2--heading heading primary-text"
                 data-aos="fade-up"
@@ -1022,59 +1040,56 @@
             </div>
           </div>
 
-          <div
-            class="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-2 lg:gap-y-10 gap-y-2"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-delay="50"
-          >
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/1.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/2.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/3.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/4.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/5.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/6.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/7.png"
-                class="w-full rounded-xl"
-              />
-            </div>
-            <div class="text-center">
-              <img
-                src="./assets/img/financial/8.png"
-                class="w-full rounded-xl"
-              />
+          <div class="swiper mySwiper px-3">
+            <div class="swiper-wrapper pb-10 pt-5 mb-10">
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/1.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/2.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/3.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/4.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/5.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/6.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/7.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
+              <div class="text-center swiper-slide">
+                <img
+                  src="./assets/img/financial/8.png"
+                  class="w-full rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1374,6 +1389,7 @@
       </button>
     </div>
     <!-- main div -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -1395,13 +1411,68 @@
           $(".slider").css("background-image", "url(" + bg + ")");
           $(".slider-content h2").html(title);
           $(".slider-content p").html(desc);
-          $(".slider-content a").attr('href', link);
+          $(".slider-content a").attr("href", link);
         });
 
         $(".toggle--nav").click(function () {
           $(this).toggleClass("active");
           $(".main--nav").toggleClass("active");
         });
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1336: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mywork", {
+        autoplay: {
+          delay: 3000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1336: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
 
@@ -1442,6 +1513,30 @@
           });
         });
       });
+    </script>
+
+    <script>
+      const video = document.getElementById("myVideo");
+  const btn = document.getElementById("playPauseBtn");
+  const icon = document.getElementById("playPauseIcon");
+
+  btn.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      icon.src = "./assets/img/pause.svg"; // change to pause icon
+      btn.style.opacity = "0"; // hide button when playing
+    } else {
+      video.pause();
+      icon.src = "./assets/img/Video.svg"; // change back to play icon
+      btn.style.opacity = "1"; // show button when paused
+    }
+  });
+
+  // When video ends, reset
+  video.addEventListener("ended", () => {
+    icon.src = "./assets/img/Video.svg";
+    btn.style.opacity = "1";
+  });
     </script>
   </body>
 </html>
